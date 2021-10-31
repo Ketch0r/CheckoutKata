@@ -16,5 +16,10 @@ namespace CheckoutKata
             this.item = item;
             this.percentage = percentage;
         }
+
+        public override decimal CalculateDiscount(List<Item> items)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

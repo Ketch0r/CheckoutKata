@@ -36,11 +36,7 @@ namespace CheckoutKata
             if (promos != null)
             {
                 foreach(Promotion promo in promos)
-                {
-                    // check for number of item in basket for each promo
-                    // calculate how much discount should be applied
-                    // add that to a discount total
-                }
+                    discount += promo.CalculateDiscount(Items);
             }
 
             return total - discount;

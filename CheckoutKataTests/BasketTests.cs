@@ -59,7 +59,7 @@ namespace CheckoutKataTests
         [TestMethod]
         public void CalculateTotalSpecificValuePromo()
         {
-            decimal expectedTotal = 0.00M;
+            decimal expectedTotal = 80;
 
             Basket basket = new Basket();
             List<Promotion> promos = new List<Promotion>();

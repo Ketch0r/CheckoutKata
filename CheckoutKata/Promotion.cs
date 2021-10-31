@@ -13,5 +13,7 @@ namespace CheckoutKata
 
         public int NumberOfItems { get => numberOfItems; set => numberOfItems = value; }
         public Item Item { get => item; set => item = value; }
+
+        public abstract decimal CalculateDiscount(List<Item> items);
     }
 }
