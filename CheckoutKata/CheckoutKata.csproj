@@ -44,11 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basket.cs" />
-    <Compile Include="Enums.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="PercentageOff.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Promotion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecificValueOff.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

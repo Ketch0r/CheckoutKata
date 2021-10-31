@@ -16,38 +16,38 @@ namespace CheckoutKata
         {
             Setup();
 
+
         }
 
         private static void Setup()
         {
             #region items
-            items.Add(new Item()
+            Item itemA = new Item()
             {
                 Sku = "A",
                 Price = 10
-            });
-            items.Add(new Item()
+            };
+            Item itemB = new Item()
             {
                 Sku = "B",
                 Price = 10
-            });
-            items.Add(new Item()
+            }; 
+            Item itemC = new Item()
             {
                 Sku = "C",
                 Price = 10
-            });
-            items.Add(new Item()
+            }; 
+            Item itemD = new Item()
             {
                 Sku = "D",
                 Price = 10
-            });
+            };
+            items.AddRange(new Item[] { itemA, itemB, itemC, itemD});
             #endregion items
 
             #region promos
-            promos.Add(new Promotion
-            {
-
-            });
+            promos.Add(new SpecificValueOff(itemB, 3, 40));
+            promos.Add(new PercentageOff(itemD, 2, 25));
             #endregion promos
         }
     }
