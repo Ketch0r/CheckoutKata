@@ -75,11 +75,11 @@ namespace CheckoutKataTests
         [TestMethod]
         public void CalculateTotalPercentagePromo()
         {
-            decimal expectedTotal = 0.00M;
+            decimal expectedTotal = 165M;
 
             Basket basket = new Basket();
             List<Promotion> promos = new List<Promotion>();
-            promos.Add(new PercentageOff(itemD, 2, 25));
+            promos.Add(new PercentageOff(itemD, 2, 0.25M));
 
             basket.AddToBasket(itemD, 4);
 
