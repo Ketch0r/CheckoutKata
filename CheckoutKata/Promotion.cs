@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheckoutKata
 {
-    abstract class Promotion
+    public abstract class Promotion
     {
         protected Item item;
         protected int numberOfItems;
