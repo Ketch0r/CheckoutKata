@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheckoutKata
 {
-    class SpecificValueOff : Promotion
+    public class SpecificValueOff : Promotion
     {
         protected decimal price;
 

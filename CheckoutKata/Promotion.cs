@@ -11,8 +11,6 @@ namespace CheckoutKata
         protected Item item;
         protected int numberOfItems;
 
-
-
         public int NumberOfItems { get => numberOfItems; set => numberOfItems = value; }
         public Item Item { get => item; set => item = value; }
     }

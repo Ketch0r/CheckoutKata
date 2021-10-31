@@ -23,18 +23,27 @@ namespace CheckoutKata
             Console.WriteLine($"Added {quantity} {item.Sku} to basket");
         }
 
-        public decimal CalculateTotal(Promotion[] promos)
+        public decimal CalculateTotal(List<Promotion> promos = null)
         {
+            decimal total = 0;
+            decimal discount = 0;
+
             // add up list of item prices for a total
+            foreach (Item item in Items)
+                total += item.Price;
 
-            // iterate promotions
-                // check for number of item in basket for each promo
-                // calculate how much discount should be applied
-                // add that to a discount total
+            // promos null check
+            if (promos != null)
+            {
+                foreach(Promotion promo in promos)
+                {
+                    // check for number of item in basket for each promo
+                    // calculate how much discount should be applied
+                    // add that to a discount total
+                }
+            }
 
-            // return total - discount
-
-            return 0.00M;
+            return total - discount;
         }
     }
 }

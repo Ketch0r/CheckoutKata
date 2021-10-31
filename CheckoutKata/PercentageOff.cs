@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheckoutKata
 {
-    class PercentageOff : Promotion
+    public class PercentageOff : Promotion
     {
         private int percentage;
 
